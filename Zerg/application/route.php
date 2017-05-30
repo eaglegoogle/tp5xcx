@@ -37,3 +37,5 @@ use think\Route;
 //Route::get('banner/:id', 'api/v1/Banner/getBanner');
 //Route::get('api/v1/banner/:id', 'api/v1.Banner/getBanner');
 Route::get('api/:version/banner/:id', 'api/:version.Banner/getBanner');
+Route::get('api/:version/theme', 'api/:version.Theme/getSimpleList');     //这个是获取全部主题列表的
+Route::get('api/:version/theme/:id', 'api/:version.Theme/getComplexOne'); //这个是获取一个主题的列表，所以有个:id
